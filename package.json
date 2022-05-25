@@ -1,0 +1,25 @@
+{
+  "name": "projeto-2.2-pokedex",
+  "version": "1.0.0",
+  "description": "Projeto Pokedex",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevzVictor/projeto-2.2-pokedex.git"
+  },
+  "author": "Victor Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevzVictor/projeto-2.2-pokedex/issues"
+  },
+  "homepage": "https://github.com/DevzVictor/projeto-2.2-pokedex#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
