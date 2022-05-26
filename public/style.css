@@ -26,6 +26,8 @@ section#cards{
     justify-content: space-evenly;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    flex-wrap: wrap;
+   gap: 50px 40px;
 }
 
 section#cards div.card{
