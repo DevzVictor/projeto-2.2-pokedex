@@ -91,15 +91,43 @@ const pokedex = [
   },
 ]
 
+let pokemon = undefined
+
 // ROTAS
+//READ
 app.get("/", (req, res) => {
-  res.render("index", {pokedex});
+  res.render("index", {pokedex, pokemon});
 });
 
-app.post("/add", (req, res) => {
+//CREATE
+app.post("/create", (req, res) => {
   const pokemon = req.body;
+  pokemon.id = pokedex.length + 1;
   pokedex.push(pokemon);
-  res.redirect("/");
+  res.redirect("/#cards");
+});
+
+app.get("/detalhes/:id", (req, res) => {
+  const id = +req.params.id;
+  pokemon = pokedex.find(pokemon => pokemon.id === id)
+  res.redirect("/#cadastro");
+});
+
+//UPDATE
+app.post("/update/:id", (req, res) =>{
+  const id = +req.params.id - 1;
+  const newPokemon = req.body;
+  newPokemon.id = id + 1;
+  pokedex[id] = newPokemon;
+  pokemon = undefined;
+  res.redirect("/#cards");
+});
+
+//DELETE
+app.get("/delete/:id", (req, res) => {
+  const id = +req.params.id - 1;
+  delete pokedex[id];
+  res.redirect("/#cards");
 });
 
 app.listen(3000, () => console.log("Servidor rodando em http://localhost:3000"));
