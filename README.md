@@ -1,7 +1,8 @@
 # projeto-2.2-pokedex
 Projeto 2 - Pokedex - modulo 2
 
-!.[logo of the project].(https://github.com/DevzVictor/projeto-2.2-pokedex/blob/main/public/img/Logo.png)
+## Logo of Project
+![image](https://user-images.githubusercontent.com/91481122/171306730-3f4c3155-b396-45b8-bd35-cd587efe8a2b.png)
 
 ## Description
 Sistema de cadastro e edição de pokemons.
