@@ -8,47 +8,65 @@
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
-  z-index: 9999;
   width: 100%;
-  background-color: red;
+  z-index: 10;
+  top: 0;
+  position: fixed;
+  background-color: #E71B23;
+}
+
+nav article{
+  display: flex;
+  align-items: center;
+}
+
+nav article img{
+  width: 15rem;
+  padding-left: 2rem;
 }
 
 nav ul {
   display: flex;
-  align-items: center;
   list-style: none;
+  align-items: center;
+  padding-right: 3rem;
 }
 
 nav ul li {
   padding: 0.6rem;
-}
-
-nav h1 {
-  color: #fff;
-  font-size: 1.4rem;
+  
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.2rem;
-}
-
-header img{
-    width: 100%;
-    margin-top: 2.7rem;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 main {
-  margin: 0 10rem 0 10rem;
+  background-size: contain;
+  background-image: url(/img/Fundo.png);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main div#fundo{
+  margin: 5.2rem 10rem 0rem 10rem;
+  background-color: #fff;
+  border: solid 2px #000;
+  border-radius: 2rem;
 }
 
 section#cards {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
   gap: 50px 40px;
 }
@@ -114,12 +132,21 @@ section#cards div.card p {
 section#cadastro {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 2rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  align-items: center;
+}
+
+section#cadastro img{
+  max-width:300px;
+  max-height:300px;
+  width: auto;
+  height: auto;
+  padding-right: 2;
 }
 
 section#cadastro form {
-  width: 50%;
+  width: 100%;
 }
 
 section#cadastro h2 {
@@ -134,7 +161,7 @@ section#cadastro form input {
   font-size: 1rem;
   outline: none;
   border: solid 2px rgb(196, 196, 196);
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 .2rem .2rem .2rem;
 }
 
 section#cadastro form label {
@@ -162,8 +189,8 @@ section#cadastro form button:hover {
 }
 
 footer{
-    background-color: #dc0a2d;
-    padding: 2rem;
+    background-color: #E71B23;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -181,4 +208,32 @@ footer p a{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+}
+
+section#message {
+  padding: 0.3rem;
+  background-color: #FAC705;
+  color: #3D60B5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#close {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+span#close:hover{
+  color: rgb(255, 0, 0);
+  transform: scale(1.5);
 }

@@ -92,11 +92,15 @@ const pokedex = [
 ]
 
 let pokemon = undefined
+let message = "";
 
 // ROTAS
 //READ
 app.get("/", (req, res) => {
-  res.render("index", {pokedex, pokemon});
+  setTimeout(() => {
+    message = "";
+  }, 1000);
+  res.render("index", {pokedex, pokemon, message });
 });
 
 //CREATE
@@ -104,6 +108,7 @@ app.post("/create", (req, res) => {
   const pokemon = req.body;
   pokemon.id = pokedex.length + 1;
   pokedex.push(pokemon);
+  message = `Parabens o pokemon foi cadastrado com sucesso`;
   res.redirect("/#cards");
 });
 
