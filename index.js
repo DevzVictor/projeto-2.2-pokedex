@@ -1,6 +1,8 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
@@ -135,4 +137,4 @@ app.get("/delete/:id", (req, res) => {
   res.redirect("/#cards");
 });
 
-app.listen(3000, () => console.log("Servidor rodando em http://localhost:3000"));
+app.listen(`port, () => console.log(Servidor rodando em http://localhost:${port}`);
