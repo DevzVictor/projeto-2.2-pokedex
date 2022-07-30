@@ -54,7 +54,7 @@ Tecnologias e linguagens utilizadas no projeto:
 
 ## 📄 Licença
 
-Este projeto está sob a licença (Mozilla Public License 2.0) - veja o arquivo LICENSE.md ([https://github.com/dudahcardoso/deploy-cachorros/blob/main/LICENSE]) para detalhes.
+Este projeto está sob a licença (Mozilla Public License 2.0) - veja o arquivo LICENSE.md ([https://github.com/DevzVictor/projeto-3.2-catalogo-de-livros/blob/main/LICENSE]) para detalhes.
 
 ## 🎁 Expressões de gratidão
 
