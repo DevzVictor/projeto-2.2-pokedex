@@ -1,4 +1,3 @@
-## Logo of Project
 ![image](https://user-images.githubusercontent.com/91481122/171306730-3f4c3155-b396-45b8-bd35-cd587efe8a2b.png)
 
 # Pokedex
